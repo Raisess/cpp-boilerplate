@@ -9,9 +9,10 @@ if [ $lgit == "y" ]; then
 
   remote_repo=${PWD##*/}
   read -p "Use git remote? (repository: $remote_repo) [y/n] " rgit
+  read -p "Github username: " github_username
 
   if [ $rgit == "y" ]; then
-    git remote add origin git@github.com:Raisess/$remote_repo
+    git remote add origin git@github.com:$github_username/$remote_repo
   fi
 fi
 
