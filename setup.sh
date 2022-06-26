@@ -14,3 +14,5 @@ if [ $lgit == "y" ]; then
     git remote add origin git@github.com:Raisess/$remote_repo
   fi
 fi
+
+rm -f ./setup.sh
