@@ -1,4 +1,4 @@
-CC=g++
+CXX=g++
 
 SRC_DIR=./src
 SRC=$(SRC_DIR)/main.cpp
@@ -8,7 +8,7 @@ OUT=$(OUT_DIR)/out.o
 
 build:
 	mkdir -p $(OUT_DIR)
-	$(CC) $(SRC) -o $(OUT)
+	$(CXX) $(SRC) -o $(OUT)
 
 run:
 	$(OUT)

@@ -1,9 +1,9 @@
 #! /bin/sh
 
+rm -rf ./.git
 read -p "Use git locale? [y/n] " lgit
 
 if [ $lgit == "y" ]; then
-  rm -rf ./.git
   git init
   git checkout -b main
 
